@@ -1,0 +1,314 @@
+{
+  "schema_version": 1,
+  "orcamento": {
+    "id": "orc-reforma-galpao-2026",
+    "titulo": "Adequação Estrutural e Elétrica de Galpão Logístico",
+    "moeda": "BRL",
+    "encargos_sociais_percentual": "85.5",
+    "bdi_padrao_percentual": "24.8",
+    "bdi_equipamentos_percentual": "14.2"
+  },
+  "insumos": [
+    {
+      "id": "ins-cimento-cp2",
+      "descricao": "Cimento Portland CP II-E-32 (saco 50 kg)",
+      "unidade": "sc",
+      "natureza": "material",
+      "preco_unitario_centavos": 3850,
+      "aplicar_encargos": false
+    },
+    {
+      "id": "ins-areia-media",
+      "descricao": "Areia média lavada para argamassa e concreto",
+      "unidade": "m3",
+      "natureza": "material",
+      "preco_unitario_centavos": 14200,
+      "aplicar_encargos": false
+    },
+    {
+      "id": "ins-brita-1",
+      "descricao": "Pedra britada n. 1 para concreto estrutural",
+      "unidade": "m3",
+      "natureza": "material",
+      "preco_unitario_centavos": 15800,
+      "aplicar_encargos": false
+    },
+    {
+      "id": "ins-aco-ca50",
+      "descricao": "Aço CA-50 cortado e dobrado 10,0 mm",
+      "unidade": "kg",
+      "natureza": "material",
+      "preco_unitario_centavos": 940,
+      "aplicar_encargos": false
+    },
+    {
+      "id": "ins-cabo-cobre-16mm",
+      "descricao": "Cabo de cobre flexível isolado 16 mm² 750V",
+      "unidade": "m",
+      "natureza": "material",
+      "preco_unitario_centavos": 2150,
+      "aplicar_encargos": false
+    },
+    {
+      "id": "ins-quadro-qgb",
+      "descricao": "Quadro geral de distribuição trifásico 225A com barramento",
+      "unidade": "un",
+      "natureza": "equipamento",
+      "preco_unitario_centavos": 485000,
+      "aplicar_encargos": false
+    },
+    {
+      "id": "ins-betoneira-400l",
+      "descricao": "Betoneira 400 L com motor elétrico — hora produtiva",
+      "unidade": "chp",
+      "natureza": "equipamento",
+      "preco_unitario_centavos": 890,
+      "aplicar_encargos": false
+    },
+    {
+      "id": "ins-pedreiro",
+      "descricao": "Pedreiro oficial de estruturas e acabamento",
+      "unidade": "h",
+      "natureza": "mao_de_obra",
+      "preco_unitario_centavos": 1680,
+      "aplicar_encargos": true
+    },
+    {
+      "id": "ins-servente",
+      "descricao": "Servente de obras gerais",
+      "unidade": "h",
+      "natureza": "mao_de_obra",
+      "preco_unitario_centavos": 1120,
+      "aplicar_encargos": true
+    },
+    {
+      "id": "ins-eletricista",
+      "descricao": "Eletricista instalador industrial",
+      "unidade": "h",
+      "natureza": "mao_de_obra",
+      "preco_unitario_centavos": 1950,
+      "aplicar_encargos": true
+    },
+    {
+      "id": "ins-ensaio-tecnologico",
+      "descricao": "Laudo e ensaio de compressão de corpo de prova de concreto",
+      "unidade": "un",
+      "natureza": "servico_terceiro",
+      "preco_unitario_centavos": 9500,
+      "aplicar_encargos": false
+    },
+    {
+      "id": "ins-resina-epoxi-reserva",
+      "descricao": "Aditivo epóxi estrutural bicomponente (item de catálogo não utilizado)",
+      "unidade": "kg",
+      "natureza": "material",
+      "preco_unitario_centavos": 8900,
+      "aplicar_encargos": false
+    }
+  ],
+  "composicoes": [
+    {
+      "id": "comp-argamassa-traco-1-3",
+      "descricao": "Argamassa de cimento e areia traço 1:3 preparo mecânico",
+      "unidade": "m3",
+      "componentes": [
+        {
+          "tipo": "insumo",
+          "referencia_id": "ins-cimento-cp2",
+          "coeficiente": "8.5",
+          "perda_percentual": "5"
+        },
+        {
+          "tipo": "insumo",
+          "referencia_id": "ins-areia-media",
+          "coeficiente": "1.05",
+          "perda_percentual": "4"
+        },
+        {
+          "tipo": "insumo",
+          "referencia_id": "ins-betoneira-400l",
+          "coeficiente": "1.2",
+          "perda_percentual": "0"
+        },
+        {
+          "tipo": "insumo",
+          "referencia_id": "ins-servente",
+          "coeficiente": "5.5",
+          "perda_percentual": "0"
+        }
+      ]
+    },
+    {
+      "id": "comp-concreto-fck25",
+      "descricao": "Concreto estrutural fck 25 MPa preparado em obra",
+      "unidade": "m3",
+      "componentes": [
+        {
+          "tipo": "insumo",
+          "referencia_id": "ins-cimento-cp2",
+          "coeficiente": "7.2",
+          "perda_percentual": "3"
+        },
+        {
+          "tipo": "insumo",
+          "referencia_id": "ins-areia-media",
+          "coeficiente": "0.68",
+          "perda_percentual": "3"
+        },
+        {
+          "tipo": "insumo",
+          "referencia_id": "ins-brita-1",
+          "coeficiente": "0.82",
+          "perda_percentual": "2"
+        },
+        {
+          "tipo": "insumo",
+          "referencia_id": "ins-betoneira-400l",
+          "coeficiente": "1.8",
+          "perda_percentual": "0"
+        },
+        {
+          "tipo": "insumo",
+          "referencia_id": "ins-pedreiro",
+          "coeficiente": "1.5",
+          "perda_percentual": "0"
+        },
+        {
+          "tipo": "insumo",
+          "referencia_id": "ins-servente",
+          "coeficiente": "6.0",
+          "perda_percentual": "0"
+        }
+      ]
+    },
+    {
+      "id": "comp-base-equipamento-armada",
+      "descricao": "Base em concreto armado com regularização e controle tecnológico",
+      "unidade": "m3",
+      "componentes": [
+        {
+          "tipo": "composicao",
+          "referencia_id": "comp-concreto-fck25",
+          "coeficiente": "1.0",
+          "perda_percentual": "5"
+        },
+        {
+          "tipo": "composicao",
+          "referencia_id": "comp-argamassa-traco-1-3",
+          "coeficiente": "0.08",
+          "perda_percentual": "2"
+        },
+        {
+          "tipo": "insumo",
+          "referencia_id": "ins-aco-ca50",
+          "coeficiente": "65",
+          "perda_percentual": "10"
+        },
+        {
+          "tipo": "insumo",
+          "referencia_id": "ins-pedreiro",
+          "coeficiente": "4.0",
+          "perda_percentual": "0"
+        },
+        {
+          "tipo": "insumo",
+          "referencia_id": "ins-servente",
+          "coeficiente": "4.0",
+          "perda_percentual": "0"
+        },
+        {
+          "tipo": "insumo",
+          "referencia_id": "ins-ensaio-tecnologico",
+          "coeficiente": "0.5",
+          "perda_percentual": "0"
+        }
+      ]
+    },
+    {
+      "id": "comp-piso-regularizado",
+      "descricao": "Camada de regularização cimentícia desempenada e3cm",
+      "unidade": "m2",
+      "componentes": [
+        {
+          "tipo": "composicao",
+          "referencia_id": "comp-argamassa-traco-1-3",
+          "coeficiente": "0.03",
+          "perda_percentual": "5"
+        },
+        {
+          "tipo": "insumo",
+          "referencia_id": "ins-pedreiro",
+          "coeficiente": "0.45",
+          "perda_percentual": "0"
+        },
+        {
+          "tipo": "insumo",
+          "referencia_id": "ins-servente",
+          "coeficiente": "0.45",
+          "perda_percentual": "0"
+        }
+      ]
+    },
+    {
+      "id": "comp-alimentador-qgb",
+      "descricao": "Fornecimento e instalação de QGB 225A com ramal alimentador",
+      "unidade": "un",
+      "componentes": [
+        {
+          "tipo": "insumo",
+          "referencia_id": "ins-quadro-qgb",
+          "coeficiente": "1",
+          "perda_percentual": "0"
+        },
+        {
+          "tipo": "insumo",
+          "referencia_id": "ins-cabo-cobre-16mm",
+          "coeficiente": "48",
+          "perda_percentual": "5"
+        },
+        {
+          "tipo": "insumo",
+          "referencia_id": "ins-eletricista",
+          "coeficiente": "16",
+          "perda_percentual": "0"
+        },
+        {
+          "tipo": "insumo",
+          "referencia_id": "ins-servente",
+          "coeficiente": "8",
+          "perda_percentual": "0"
+        }
+      ]
+    }
+  ],
+  "itens_orcamento": [
+    {
+      "id": "item-01",
+      "etapa": "01. Infraestrutura e Bases",
+      "composicao_id": "comp-base-equipamento-armada",
+      "quantidade": "18.5",
+      "bdi_modo": "padrao"
+    },
+    {
+      "id": "item-02",
+      "etapa": "02. Pisos e Regularizações",
+      "composicao_id": "comp-piso-regularizado",
+      "quantidade": "240",
+      "bdi_modo": "padrao"
+    },
+    {
+      "id": "item-03",
+      "etapa": "03. Instalações Elétricas Industriais",
+      "composicao_id": "comp-alimentador-qgb",
+      "quantidade": "2",
+      "bdi_modo": "diferenciado_equipamentos"
+    },
+    {
+      "id": "item-04",
+      "etapa": "04. Ensaios e Controle Complementar",
+      "composicao_id": "comp-concreto-fck25",
+      "quantidade": "4",
+      "bdi_modo": "isento"
+    }
+  ]
+}

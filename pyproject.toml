@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools==84.2.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "orcamento-composicoes"
+version = "1.0.0"
+description = "Orçamento analítico por composições de custos unitários, BDI e explosão de insumos com frações exatas."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "Martin Lofrano / LOFRANO TECNOLOGIA"}]
+dependencies = []
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Topic :: Office/Business :: Financial",
+]
+
+[project.scripts]
+orcamento-composicoes = "orcamento_composicoes.cli:main"
+
+[project.urls]
+Homepage = "https://lofranotecnologia.com.br/"
+Repository = "https://github.com/martinlofranodeoliveira/orcamento-composicoes"
+Issues = "https://github.com/martinlofranodeoliveira/orcamento-composicoes/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = false
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["orcamento_composicoes"]
+namespaces = false
+
+[tool.setuptools.package-data]
+orcamento_composicoes = ["data/*.json"]
